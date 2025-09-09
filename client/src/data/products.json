@@ -1,0 +1,339 @@
+[
+  {
+    "id": "1",
+    "name": "Midnight Obsession",
+    "slug": "midnight-obsession",
+    "price": 25000,
+    "sizes": [
+      { "size": "50ml", "price": 25000 },
+      { "size": "100ml", "price": 45000 }
+    ],
+    "gender": "Unisex",
+    "badges": ["Best Seller"],
+    "notes": {
+      "top": ["Bergamot", "Pink Pepper", "Cardamom"],
+      "heart": ["Vanilla", "Rose", "Jasmine"],
+      "base": ["Amber", "Sandalwood", "Musk"]
+    },
+    "families": ["Oriental", "Floral"],
+    "concentration": 20,
+    "longevity": "8-12 hours",
+    "sillage": "Heavy",
+    "image": "https://images.unsplash.com/photo-1523293182086-7651a899d37f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800",
+    "gallery": [
+      "https://images.unsplash.com/photo-1523293182086-7651a899d37f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800",
+      "https://images.unsplash.com/photo-1541643600914-78b084683601?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800"
+    ],
+    "inStock": true,
+    "popularity": 95,
+    "description": "A captivating blend of oriental warmth and floral elegance. Midnight Obsession opens with sparkling bergamot and pink pepper, leading to a heart of luxurious vanilla and rose, finishing with a sensual base of amber and musk."
+  },
+  {
+    "id": "2",
+    "name": "Rose Elegance",
+    "slug": "rose-elegance",
+    "price": 32000,
+    "sizes": [
+      { "size": "50ml", "price": 32000 },
+      { "size": "100ml", "price": 58000 }
+    ],
+    "gender": "Women",
+    "badges": ["New"],
+    "notes": {
+      "top": ["Bulgarian Rose", "Lemon", "Green Leaves"],
+      "heart": ["Jasmine", "Peony", "Lily of the Valley"],
+      "base": ["White Musk", "Cedar", "Amber"]
+    },
+    "families": ["Floral"],
+    "concentration": 15,
+    "longevity": "6-8 hours",
+    "sillage": "Moderate",
+    "image": "https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800",
+    "gallery": [
+      "https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800"
+    ],
+    "inStock": true,
+    "popularity": 88,
+    "description": "Pure feminine sophistication captured in a bottle. Rose Elegance celebrates the queen of flowers with authentic Bulgarian rose petals, enhanced by delicate jasmine and finished with soft white musk."
+  },
+  {
+    "id": "3",
+    "name": "Citrus Breeze",
+    "slug": "citrus-breeze",
+    "price": 28000,
+    "sizes": [
+      { "size": "50ml", "price": 28000 },
+      { "size": "100ml", "price": 50000 }
+    ],
+    "gender": "Unisex",
+    "badges": [],
+    "notes": {
+      "top": ["Bergamot", "Lemon", "Grapefruit"],
+      "heart": ["Neroli", "Petitgrain", "Lavender"],
+      "base": ["Vetiver", "Cedar", "Ambergris"]
+    },
+    "families": ["Citrus", "Fresh"],
+    "concentration": 12,
+    "longevity": "4-6 hours",
+    "sillage": "Light to Moderate",
+    "image": "https://images.unsplash.com/photo-1587017539504-67cfbddac569?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800",
+    "gallery": [
+      "https://images.unsplash.com/photo-1587017539504-67cfbddac569?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800"
+    ],
+    "inStock": true,
+    "popularity": 82,
+    "description": "Fresh, invigorating, and utterly refreshing. Citrus Breeze captures the essence of a Mediterranean morning with zesty bergamot and lemon, balanced by aromatic lavender and grounded with woody vetiver."
+  },
+  {
+    "id": "4",
+    "name": "Woody Essence",
+    "slug": "woody-essence",
+    "price": 30000,
+    "sizes": [
+      { "size": "50ml", "price": 30000 },
+      { "size": "100ml", "price": 55000 }
+    ],
+    "gender": "Men",
+    "badges": [],
+    "notes": {
+      "top": ["Black Pepper", "Ginger", "Cardamom"],
+      "heart": ["Sandalwood", "Cedar", "Patchouli"],
+      "base": ["Amber", "Vanilla", "Musk"]
+    },
+    "families": ["Woody", "Oriental"],
+    "concentration": 18,
+    "longevity": "10-14 hours",
+    "sillage": "Heavy",
+    "image": "https://images.unsplash.com/photo-1615634260167-c8cdede054de?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800",
+    "gallery": [
+      "https://images.unsplash.com/photo-1615634260167-c8cdede054de?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800"
+    ],
+    "inStock": true,
+    "popularity": 90,
+    "description": "Sophisticated masculinity in its purest form. Woody Essence combines spicy black pepper and ginger with rich sandalwood and cedar, creating a powerful yet refined scent that commands respect."
+  },
+  {
+    "id": "5",
+    "name": "Ocean Dreams",
+    "slug": "ocean-dreams",
+    "price": 26000,
+    "sizes": [
+      { "size": "50ml", "price": 26000 },
+      { "size": "100ml", "price": 47000 }
+    ],
+    "gender": "Unisex",
+    "badges": ["Limited Edition"],
+    "notes": {
+      "top": ["Sea Salt", "Ozonic Notes", "Lemon"],
+      "heart": ["Driftwood", "Seaweed", "Lily"],
+      "base": ["Ambergris", "White Musk", "Sandalwood"]
+    },
+    "families": ["Aquatic", "Fresh"],
+    "concentration": 14,
+    "longevity": "6-8 hours",
+    "sillage": "Moderate",
+    "image": "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800",
+    "gallery": [
+      "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800"
+    ],
+    "inStock": true,
+    "popularity": 75,
+    "description": "Escape to endless horizons with Ocean Dreams. This aquatic masterpiece captures the essence of seaside serenity with fresh sea salt, driftwood, and gentle ambergris that evokes memories of ocean waves."
+  },
+  {
+    "id": "6",
+    "name": "Velvet Nights",
+    "slug": "velvet-nights",
+    "price": 38000,
+    "sizes": [
+      { "size": "50ml", "price": 38000 },
+      { "size": "100ml", "price": 68000 }
+    ],
+    "gender": "Women",
+    "badges": ["Best Seller"],
+    "notes": {
+      "top": ["Black Currant", "Pink Pepper", "Bergamot"],
+      "heart": ["Rose", "Iris", "Violet"],
+      "base": ["Patchouli", "Vanilla", "Praline"]
+    },
+    "families": ["Oriental", "Gourmand"],
+    "concentration": 22,
+    "longevity": "12-16 hours",
+    "sillage": "Very Heavy",
+    "image": "https://images.unsplash.com/photo-1541643600914-78b084683601?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800",
+    "gallery": [
+      "https://images.unsplash.com/photo-1541643600914-78b084683601?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800"
+    ],
+    "inStock": true,
+    "popularity": 92,
+    "description": "Luxurious and intoxicating, Velvet Nights is the epitome of evening elegance. Rich black currant and pink pepper give way to a heart of precious rose and iris, culminating in a decadent base of vanilla and praline."
+  },
+  {
+    "id": "7",
+    "name": "Golden Spice",
+    "slug": "golden-spice",
+    "price": 34000,
+    "sizes": [
+      { "size": "50ml", "price": 34000 },
+      { "size": "100ml", "price": 62000 }
+    ],
+    "gender": "Unisex",
+    "badges": [],
+    "notes": {
+      "top": ["Saffron", "Cinnamon", "Orange Blossom"],
+      "heart": ["Oud", "Rose", "Geranium"],
+      "base": ["Amber", "Patchouli", "Benzoin"]
+    },
+    "families": ["Oriental", "Woody"],
+    "concentration": 25,
+    "longevity": "14-18 hours",
+    "sillage": "Very Heavy",
+    "image": "https://images.unsplash.com/photo-1523293182086-7651a899d37f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800",
+    "gallery": [
+      "https://images.unsplash.com/photo-1523293182086-7651a899d37f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800"
+    ],
+    "inStock": true,
+    "popularity": 85,
+    "description": "A treasure from ancient spice routes, Golden Spice weaves precious saffron and warming cinnamon with mystical oud and rose. This opulent fragrance is a testament to luxury and tradition."
+  },
+  {
+    "id": "8",
+    "name": "Garden Party",
+    "slug": "garden-party",
+    "price": 24000,
+    "sizes": [
+      { "size": "50ml", "price": 24000 },
+      { "size": "100ml", "price": 43000 }
+    ],
+    "gender": "Women",
+    "badges": ["New"],
+    "notes": {
+      "top": ["Green Mandarin", "Pear", "Freesia"],
+      "heart": ["Peony", "Magnolia", "Lily of the Valley"],
+      "base": ["White Musk", "Cedar", "Honey"]
+    },
+    "families": ["Floral", "Fresh"],
+    "concentration": 13,
+    "longevity": "5-7 hours",
+    "sillage": "Light to Moderate",
+    "image": "https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800",
+    "gallery": [
+      "https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800"
+    ],
+    "inStock": true,
+    "popularity": 78,
+    "description": "Fresh, joyful, and effortlessly charming. Garden Party captures the essence of a sunny afternoon among blooming flowers with green mandarin, delicate peony, and a touch of golden honey."
+  },
+  {
+    "id": "9",
+    "name": "Smoke & Mirrors",
+    "slug": "smoke-mirrors",
+    "price": 36000,
+    "sizes": [
+      { "size": "50ml", "price": 36000 },
+      { "size": "100ml", "price": 65000 }
+    ],
+    "gender": "Men",
+    "badges": ["Limited Edition"],
+    "notes": {
+      "top": ["Incense", "Pink Pepper", "Elemi"],
+      "heart": ["Oud", "Cypriol", "Guaiac Wood"],
+      "base": ["Leather", "Amber", "Vanilla"]
+    },
+    "families": ["Woody", "Oriental"],
+    "concentration": 24,
+    "longevity": "16-20 hours",
+    "sillage": "Very Heavy",
+    "image": "https://images.unsplash.com/photo-1615634260167-c8cdede054de?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800",
+    "gallery": [
+      "https://images.unsplash.com/photo-1615634260167-c8cdede054de?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800"
+    ],
+    "inStock": false,
+    "popularity": 95,
+    "description": "Mysterious and magnetic, Smoke & Mirrors is for the bold and sophisticated. Sacred incense and precious oud create an intoxicating blend that's finished with luxurious leather and warm vanilla."
+  },
+  {
+    "id": "10",
+    "name": "Summer Solstice",
+    "slug": "summer-solstice",
+    "price": 29000,
+    "sizes": [
+      { "size": "50ml", "price": 29000 },
+      { "size": "100ml", "price": 52000 }
+    ],
+    "gender": "Unisex",
+    "badges": [],
+    "notes": {
+      "top": ["Coconut", "Lime", "Sea Breeze"],
+      "heart": ["Jasmine", "Frangipani", "Tiare"],
+      "base": ["Sandalwood", "Vanilla", "Solar Musk"]
+    },
+    "families": ["Fresh", "Floral"],
+    "concentration": 16,
+    "longevity": "7-9 hours",
+    "sillage": "Moderate",
+    "image": "https://images.unsplash.com/photo-1587017539504-67cfbddac569?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800",
+    "gallery": [
+      "https://images.unsplash.com/photo-1587017539504-67cfbddac569?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800"
+    ],
+    "inStock": true,
+    "popularity": 80,
+    "description": "Eternal summer captured in a bottle. Summer Solstice transports you to tropical paradise with coconut and lime, blooming jasmine and frangipani, all warmed by creamy sandalwood and solar musk."
+  },
+  {
+    "id": "11",
+    "name": "Black Diamond",
+    "slug": "black-diamond",
+    "price": 42000,
+    "sizes": [
+      { "size": "50ml", "price": 42000 },
+      { "size": "100ml", "price": 75000 }
+    ],
+    "gender": "Unisex",
+    "badges": ["Best Seller", "Limited Edition"],
+    "notes": {
+      "top": ["Black Pepper", "Juniper", "Grapefruit"],
+      "heart": ["Oud", "Saffron", "Rose"],
+      "base": ["Ambergris", "Musk", "Sandalwood"]
+    },
+    "families": ["Oriental", "Woody"],
+    "concentration": 28,
+    "longevity": "18-24 hours",
+    "sillage": "Very Heavy",
+    "image": "https://images.unsplash.com/photo-1523293182086-7651a899d37f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800",
+    "gallery": [
+      "https://images.unsplash.com/photo-1523293182086-7651a899d37f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800"
+    ],
+    "inStock": true,
+    "popularity": 98,
+    "description": "The crown jewel of our collection. Black Diamond is an extraordinary blend of the rarest and most precious ingredients - aged oud, pure saffron, and authentic ambergris create an unforgettable olfactory experience."
+  },
+  {
+    "id": "12",
+    "name": "Wild Orchid",
+    "slug": "wild-orchid",
+    "price": 31000,
+    "sizes": [
+      { "size": "50ml", "price": 31000 },
+      { "size": "100ml", "price": 56000 }
+    ],
+    "gender": "Women",
+    "badges": [],
+    "notes": {
+      "top": ["Mandarin", "Black Currant", "Green Notes"],
+      "heart": ["Orchid", "Ylang-Ylang", "Lotus"],
+      "base": ["Sandalwood", "Vanilla", "White Musk"]
+    },
+    "families": ["Floral", "Oriental"],
+    "concentration": 17,
+    "longevity": "8-10 hours",
+    "sillage": "Moderate to Heavy",
+    "image": "https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800",
+    "gallery": [
+      "https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800"
+    ],
+    "inStock": true,
+    "popularity": 87,
+    "description": "Exotic and enchanting, Wild Orchid celebrates the rare beauty of tropical blooms. Mandarin and black currant open this floral symphony, while precious orchid and ylang-ylang create an intoxicating heart."
+  }
+]

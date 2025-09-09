@@ -1,0 +1,805 @@
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISHA'S FRAGRANCE - Premium Luxury Perfumes</title>
+    <meta name="description" content="Discover luxury perfumes at ISHA'S FRAGRANCE. Premium scents, authentic oils, long-lasting fragrances curated by Aish Adoke.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                borderRadius: {
+                    lg: "var(--radius)",
+                    md: "calc(var(--radius) - 2px)",
+                    sm: "calc(var(--radius) - 4px)",
+                },
+                colors: {
+                    background: "var(--background)",
+                    foreground: "var(--foreground)",
+                    card: {
+                        DEFAULT: "var(--card)",
+                        foreground: "var(--card-foreground)",
+                    },
+                    popover: {
+                        DEFAULT: "var(--popover)",
+                        foreground: "var(--popover-foreground)",
+                    },
+                    primary: {
+                        DEFAULT: "var(--primary)",
+                        foreground: "var(--primary-foreground)",
+                    },
+                    secondary: {
+                        DEFAULT: "var(--secondary)",
+                        foreground: "var(--secondary-foreground)",
+                    },
+                    muted: {
+                        DEFAULT: "var(--muted)",
+                        foreground: "var(--muted-foreground)",
+                    },
+                    accent: {
+                        DEFAULT: "var(--accent)",
+                        foreground: "var(--accent-foreground)",
+                    },
+                    destructive: {
+                        DEFAULT: "var(--destructive)",
+                        foreground: "var(--destructive-foreground)",
+                    },
+                    border: "var(--border)",
+                    input: "var(--input)",
+                    ring: "var(--ring)",
+                },
+                fontFamily: {
+                    display: ['Playfair Display', 'serif'],
+                    sans: ['Inter', 'sans-serif'],
+                },
+                animation: {
+                    'float': 'float 6s ease-in-out infinite',
+                    'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    'fadeIn': 'fadeIn 0.8s ease-out',
+                    'slideUp': 'slideUp 0.8s ease-out',
+                }
+            },
+        },
+        darkMode: 'class',
+    };
+    </script>
+    
+    <style>
+        :root {
+            --background: hsl(240 10% 4%);
+            --foreground: hsl(0 0% 98%);
+            --card: hsl(240 10% 8%);
+            --card-foreground: hsl(0 0% 95%);
+            --popover: hsl(240 10% 8%);
+            --popover-foreground: hsl(0 0% 95%);
+            --primary: hsl(254 76% 76%);
+            --primary-foreground: hsl(240 10% 4%);
+            --secondary: hsl(240 4% 16%);
+            --secondary-foreground: hsl(0 0% 98%);
+            --muted: hsl(240 6% 14%);
+            --muted-foreground: hsl(240 5% 65%);
+            --accent: hsl(39 77% 88%);
+            --accent-foreground: hsl(240 10% 4%);
+            --destructive: hsl(0 63% 31%);
+            --destructive-foreground: hsl(0 0% 98%);
+            --border: hsl(240 6% 20%);
+            --input: hsl(240 6% 20%);
+            --ring: hsl(254 76% 76%);
+            --radius: 0.75rem;
+        }
+        
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        
+        .gradient-primary {
+            background: linear-gradient(135deg, hsl(254 76% 76%), hsl(280 100% 80%));
+        }
+        
+        .gradient-accent {
+            background: linear-gradient(135deg, hsl(39 77% 88%), hsl(45 100% 85%));
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .parallax-bg {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .product-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .product-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 25px 50px -12px rgba(154, 139, 255, 0.4);
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 1000;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .testimonial-card {
+            background: linear-gradient(135deg, rgba(154, 139, 255, 0.1), rgba(245, 225, 200, 0.05));
+        }
+    </style>
+</head>
+
+<body class="bg-background text-foreground font-sans overflow-x-hidden">
+    <!-- @COMPONENT: Header -->
+    <header class="fixed top-0 w-full z-50 transition-all duration-300" id="header">
+        <nav class="glass-effect px-6 py-4">
+            <div class="max-w-7xl mx-auto flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-full gradient-primary flex items-center justify-center">
+                        <span class="text-primary-foreground font-bold text-lg">I</span>
+                    </div>
+                    <span class="font-display text-xl font-semibold text-foreground">ISHA'S FRAGRANCE</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-muted-foreground hover:text-foreground transition-colors">Home</a>
+                    <a href="#" class="text-muted-foreground hover:text-foreground transition-colors">Shop</a>
+                    <a href="#" class="text-muted-foreground hover:text-foreground transition-colors">About</a>
+                    <a href="#" class="text-muted-foreground hover:text-foreground transition-colors">Contact</a>
+                </div>
+                
+                <!-- Actions -->
+                <div class="flex items-center space-x-4">
+                    <button class="p-2 rounded-lg glass-card hover:bg-white/10 transition-colors">
+                        <i class="fas fa-search text-muted-foreground"></i>
+                    </button>
+                    <button class="p-2 rounded-lg glass-card hover:bg-white/10 transition-colors relative">
+                        <i class="fas fa-shopping-bag text-muted-foreground"></i>
+                        <span class="absolute -top-1 -right-1 w-4 h-4 bg-primary rounded-full text-xs flex items-center justify-center text-primary-foreground">2</span>
+                    </button>
+                    <!-- Mobile Menu Button -->
+                    <button class="md:hidden p-2 rounded-lg glass-card hover:bg-white/10 transition-colors">
+                        <i class="fas fa-bars text-muted-foreground"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- @END_COMPONENT: Header -->
+
+    <!-- @COMPONENT: Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background with overlay -->
+        <!-- A luxurious perfume bottle arrangement with soft lighting and elegant shadows -->
+        <div class="absolute inset-0 parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1541643600914-78b084683601?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&h=1200');">
+            <div class="absolute inset-0 bg-gradient-to-br from-background/90 via-background/70 to-background/50"></div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="absolute top-1/4 left-1/4 w-32 h-32 gradient-primary rounded-full blur-3xl opacity-20 animate-float"></div>
+        <div class="absolute bottom-1/3 right-1/4 w-24 h-24 gradient-accent rounded-full blur-2xl opacity-30 animate-float" style="animation-delay: -2s;"></div>
+        
+        <!-- Hero Content -->
+        <div class="relative z-10 text-center px-6 max-w-5xl mx-auto">
+            <div class="glass-effect rounded-3xl p-12 backdrop-blur-lg">
+                <h1 class="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fadeIn">
+                    <span class="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                        Luxury Redefined
+                    </span>
+                </h1>
+                <p class="text-xl md:text-2xl text-muted-foreground mb-8 animate-slideUp max-w-3xl mx-auto">
+                    Discover the art of fragrance with ISHA'S premium collection. Where authentic oils meet timeless elegance.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slideUp" style="animation-delay: 0.2s;">
+                    <button class="gradient-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold text-lg hover:scale-105 transition-transform shadow-lg hover:shadow-primary/25">
+                        Explore Collection
+                    </button>
+                    <button class="glass-card text-foreground px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white/10 transition-colors border border-border">
+                        <i class="fab fa-whatsapp mr-2 text-green-500"></i>
+                        Chat with Us
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-muted-foreground text-xl"></i>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Hero Section -->
+
+    <!-- @COMPONENT: Featured Collection -->
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">Featured Collection</h2>
+                <p class="text-xl text-muted-foreground max-w-2xl mx-auto">Handpicked signatures that define luxury and sophistication</p>
+            </div>
+            
+            <!-- Product Carousel -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Product Card 1 -->
+                <!-- @MAP: featuredProducts.map(product => ( -->
+                <div class="product-card glass-card rounded-2xl p-6 group">
+                    <!-- Elegant perfume bottle with golden accents and luxury packaging -->
+                    <div class="aspect-square mb-6 rounded-xl overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10">
+                        <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=800" 
+                             alt="Midnight Obsession Perfume" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="space-y-3">
+                        <span class="inline-block px-3 py-1 text-xs font-semibold gradient-primary text-primary-foreground rounded-full">Best Seller</span>
+                        <h3 class="font-display text-xl font-semibold text-foreground" data-bind="product.name">Midnight Obsession</h3>
+                        <p class="text-sm text-muted-foreground" data-bind="product.notes">Oriental • Vanilla • Amber</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-accent" data-bind="product.price">₦25,000</span>
+                            <button class="gradient-primary text-primary-foreground px-4 py-2 rounded-lg text-sm font-semibold hover:scale-105 transition-transform">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product Card 2 -->
+                <div class="product-card glass-card rounded-2xl p-6 group">
+                    <!-- Luxury rose-scented perfume with elegant crystal bottle design -->
+                    <div class="aspect-square mb-6 rounded-xl overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10">
+                        <img src="https://pixabay.com/get/g7044a41cf3a7bf54714a6b36a88567d69103e4c6df2005b5d66f0a046eb5f83d7f2992a1aa202290ca05862aba0552cbf64074fc0de4e1f95b7d139d17a883ac_1280.jpg" 
+                             alt="Rose Elegance Perfume" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="space-y-3">
+                        <span class="inline-block px-3 py-1 text-xs font-semibold bg-accent/20 text-accent rounded-full">New</span>
+                        <h3 class="font-display text-xl font-semibold text-foreground">Rose Elegance</h3>
+                        <p class="text-sm text-muted-foreground">Floral • Rose • Jasmine</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-accent">₦32,000</span>
+                            <button class="gradient-primary text-primary-foreground px-4 py-2 rounded-lg text-sm font-semibold hover:scale-105 transition-transform">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product Card 3 -->
+                <div class="product-card glass-card rounded-2xl p-6 group">
+                    <!-- Modern minimalist perfume bottle with fresh citrus essence -->
+                    <div class="aspect-square mb-6 rounded-xl overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10">
+                        <img src="https://pixabay.com/get/g936fb8f05d01c0f63c80ac4c321d6cd5df124924422db9d0e4266f570349e0f36aea8f97526dbc7c6436aaeac4f65fa2d4aa41d6adf16ed9cab6dc3c5c8bd333_1280.jpg" 
+                             alt="Citrus Breeze Perfume" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="space-y-3">
+                        <h3 class="font-display text-xl font-semibold text-foreground">Citrus Breeze</h3>
+                        <p class="text-sm text-muted-foreground">Citrus • Bergamot • Lemon</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-accent">₦28,000</span>
+                            <button class="gradient-primary text-primary-foreground px-4 py-2 rounded-lg text-sm font-semibold hover:scale-105 transition-transform">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product Card 4 -->
+                <div class="product-card glass-card rounded-2xl p-6 group">
+                    <!-- Sophisticated woody perfume with dark amber bottle and masculine appeal -->
+                    <div class="aspect-square mb-6 rounded-xl overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10">
+                        <img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=800" 
+                             alt="Woody Essence Perfume" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="space-y-3">
+                        <h3 class="font-display text-xl font-semibold text-foreground">Woody Essence</h3>
+                        <p class="text-sm text-muted-foreground">Woody • Sandalwood • Cedar</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-accent">₦30,000</span>
+                            <button class="gradient-primary text-primary-foreground px-4 py-2 rounded-lg text-sm font-semibold hover:scale-105 transition-transform">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- @END_MAP )) -->
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="glass-card text-foreground px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white/10 transition-colors border border-border">
+                    View All Products
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Featured Collection -->
+
+    <!-- @COMPONENT: Why Choose Us -->
+    <section class="py-20 px-6 bg-card/20">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">Why Choose ISHA'S</h2>
+                <p class="text-xl text-muted-foreground max-w-2xl mx-auto">Experience the difference with our commitment to quality and authenticity</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1 -->
+                <div class="glass-card rounded-2xl p-8 text-center group hover:scale-105 transition-transform">
+                    <div class="w-16 h-16 gradient-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-clock text-primary-foreground text-2xl"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-semibold mb-4">Long-Lasting</h3>
+                    <p class="text-muted-foreground">Premium quality oils that last 8-12 hours, ensuring your signature scent stays with you all day.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="glass-card rounded-2xl p-8 text-center group hover:scale-105 transition-transform">
+                    <div class="w-16 h-16 gradient-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-certificate text-accent-foreground text-2xl"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-semibold mb-4">100% Authentic</h3>
+                    <p class="text-muted-foreground">Sourced directly from certified suppliers, guaranteeing genuine and original fragrances.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="glass-card rounded-2xl p-8 text-center group hover:scale-105 transition-transform">
+                    <div class="w-16 h-16 gradient-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-shipping-fast text-primary-foreground text-2xl"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-semibold mb-4">Fast Delivery</h3>
+                    <p class="text-muted-foreground">Same-day delivery within Lagos and nationwide shipping within 2-3 business days.</p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="glass-card rounded-2xl p-8 text-center group hover:scale-105 transition-transform">
+                    <div class="w-16 h-16 gradient-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-heart text-accent-foreground text-2xl"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-semibold mb-4">Curated with Love</h3>
+                    <p class="text-muted-foreground">Each fragrance personally selected by Aish Adoke to ensure excellence in every bottle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Why Choose Us -->
+
+    <!-- @COMPONENT: Shop by Notes -->
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">Shop by Fragrance Notes</h2>
+                <p class="text-xl text-muted-foreground max-w-2xl mx-auto">Discover your perfect scent through our curated fragrance families</p>
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="glass-card px-6 py-3 rounded-full border border-primary bg-primary/10 text-primary font-semibold hover:bg-primary hover:text-primary-foreground transition-colors">
+                    <i class="fas fa-leaf mr-2"></i>
+                    Floral
+                </button>
+                <button class="glass-card px-6 py-3 rounded-full border border-border text-muted-foreground font-semibold hover:bg-white/10 transition-colors">
+                    <i class="fas fa-fire mr-2"></i>
+                    Oriental
+                </button>
+                <button class="glass-card px-6 py-3 rounded-full border border-border text-muted-foreground font-semibold hover:bg-white/10 transition-colors">
+                    <i class="fas fa-sun mr-2"></i>
+                    Citrus
+                </button>
+                <button class="glass-card px-6 py-3 rounded-full border border-border text-muted-foreground font-semibold hover:bg-white/10 transition-colors">
+                    <i class="fas fa-tree mr-2"></i>
+                    Woody
+                </button>
+                <button class="glass-card px-6 py-3 rounded-full border border-border text-muted-foreground font-semibold hover:bg-white/10 transition-colors">
+                    <i class="fas fa-candy-cane mr-2"></i>
+                    Gourmand
+                </button>
+            </div>
+            
+            <!-- Featured Category Products -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Category Product 1 -->
+                <div class="glass-card rounded-2xl p-6 group">
+                    <!-- Beautiful floral perfume with delicate rose and peony arrangement -->
+                    <div class="aspect-[4/3] mb-6 rounded-xl overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10">
+                        <img src="https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                             alt="Floral Paradise Perfume" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="space-y-3">
+                        <h3 class="font-display text-xl font-semibold text-foreground">Floral Paradise</h3>
+                        <p class="text-sm text-muted-foreground">A delicate blend of rose petals, jasmine, and peony</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xl font-bold text-accent">₦27,500</span>
+                            <button class="text-primary hover:text-primary/80 transition-colors">
+                                <i class="far fa-heart mr-1"></i>
+                                Add to Wishlist
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Category Product 2 -->
+                <div class="glass-card rounded-2xl p-6 group">
+                    <!-- Sophisticated oriental perfume with exotic spices and warm amber -->
+                    <div class="aspect-[4/3] mb-6 rounded-xl overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10">
+                        <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                             alt="Oriental Mystique Perfume" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="space-y-3">
+                        <h3 class="font-display text-xl font-semibold text-foreground">Oriental Mystique</h3>
+                        <p class="text-sm text-muted-foreground">Exotic spices, warm amber, and sensual musk</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xl font-bold text-accent">₦35,000</span>
+                            <button class="text-primary hover:text-primary/80 transition-colors">
+                                <i class="far fa-heart mr-1"></i>
+                                Add to Wishlist
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Category Product 3 -->
+                <div class="glass-card rounded-2xl p-6 group">
+                    <!-- Fresh woody perfume with cedar and sandalwood in natural forest setting -->
+                    <div class="aspect-[4/3] mb-6 rounded-xl overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10">
+                        <img src="https://images.unsplash.com/photo-1587017539504-67cfbddac569?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                             alt="Forest Serenity Perfume" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="space-y-3">
+                        <h3 class="font-display text-xl font-semibold text-foreground">Forest Serenity</h3>
+                        <p class="text-sm text-muted-foreground">Cedar, sandalwood, and fresh pine notes</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xl font-bold text-accent">₦29,000</span>
+                            <button class="text-primary hover:text-primary/80 transition-colors">
+                                <i class="far fa-heart mr-1"></i>
+                                Add to Wishlist
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Shop by Notes -->
+
+    <!-- @COMPONENT: Testimonials -->
+    <section class="py-20 px-6 bg-card/20">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">What Our Customers Say</h2>
+                <p class="text-xl text-muted-foreground max-w-2xl mx-auto">Join thousands of satisfied customers who trust ISHA'S FRAGRANCE</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card glass-card rounded-2xl p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="flex space-x-1 text-accent">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-sm text-muted-foreground">5.0</span>
+                    </div>
+                    <blockquote class="text-muted-foreground mb-6 italic">
+                        "The quality is exceptional! My Midnight Obsession lasts all day and gets compliments everywhere I go. Aish truly knows how to curate the best fragrances."
+                    </blockquote>
+                    <div class="flex items-center">
+                        <!-- Happy customer wearing elegant perfume in luxury setting -->
+                        <img src="https://pixabay.com/get/g3d1184d0260eec33d86a4bf648557c26b2aa75f58aac6105d0421f91200f5383fb1fd723fa160e57e9f64a4c0bc315fa8e45195691c41f3ad2b1216a7e61eae8_1280.jpg" 
+                             alt="Sarah M. - Customer" 
+                             class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <div class="font-semibold text-foreground">Sarah M.</div>
+                            <div class="text-sm text-muted-foreground">Lagos, Nigeria</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card glass-card rounded-2xl p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="flex space-x-1 text-accent">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-sm text-muted-foreground">5.0</span>
+                    </div>
+                    <blockquote class="text-muted-foreground mb-6 italic">
+                        "Fast delivery and authentic products! I've tried many online perfume stores, but ISHA'S FRAGRANCE delivers both quality and excellent customer service."
+                    </blockquote>
+                    <div class="flex items-center">
+                        <!-- Professional businessman satisfied with premium fragrance purchase -->
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&h=150" 
+                             alt="David K. - Customer" 
+                             class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <div class="font-semibold text-foreground">David K.</div>
+                            <div class="text-sm text-muted-foreground">Abuja, Nigeria</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card glass-card rounded-2xl p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="flex space-x-1 text-accent">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-sm text-muted-foreground">5.0</span>
+                    </div>
+                    <blockquote class="text-muted-foreground mb-6 italic">
+                        "I'm obsessed with Rose Elegance! The scent is divine and the packaging is so luxurious. Will definitely be ordering more from ISHA'S."
+                    </blockquote>
+                    <div class="flex items-center">
+                        <!-- Elegant woman enjoying luxury perfume in sophisticated environment -->
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&h=150" 
+                             alt="Fatima A. - Customer" 
+                             class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <div class="font-semibold text-foreground">Fatima A.</div>
+                            <div class="text-sm text-muted-foreground">Port Harcourt, Nigeria</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Testimonials -->
+
+    <!-- @COMPONENT: CTA Banner -->
+    <section class="py-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="glass-effect rounded-3xl p-12 relative overflow-hidden">
+                <!-- Floating decorative elements -->
+                <div class="absolute top-0 left-0 w-32 h-32 gradient-primary rounded-full blur-3xl opacity-20"></div>
+                <div class="absolute bottom-0 right-0 w-24 h-24 gradient-accent rounded-full blur-2xl opacity-30"></div>
+                
+                <div class="relative z-10">
+                    <h2 class="font-display text-4xl md:text-5xl font-bold mb-6">
+                        Ready to Find Your 
+                        <span class="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                            Signature Scent?
+                        </span>
+                    </h2>
+                    <p class="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+                        Chat with us on WhatsApp for personalized recommendations and exclusive offers
+                    </p>
+                    <button class="gradient-primary text-primary-foreground px-10 py-5 rounded-xl font-semibold text-xl hover:scale-105 transition-transform shadow-lg hover:shadow-primary/25">
+                        <i class="fab fa-whatsapp mr-3 text-2xl"></i>
+                        Chat on WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: CTA Banner -->
+
+    <!-- @COMPONENT: Footer -->
+    <footer class="glass-card border-t border-border py-16 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <!-- Brand Info -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-12 h-12 rounded-full gradient-primary flex items-center justify-center">
+                            <span class="text-primary-foreground font-bold text-xl">I</span>
+                        </div>
+                        <span class="font-display text-2xl font-semibold text-foreground">ISHA'S FRAGRANCE</span>
+                    </div>
+                    <p class="text-muted-foreground mb-6 max-w-md">
+                        Curating luxury fragrances that tell your story. Experience authentic oils, exceptional longevity, and personalized service.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 glass-card rounded-full flex items-center justify-center hover:bg-white/10 transition-colors">
+                            <i class="fab fa-instagram text-muted-foreground"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 glass-card rounded-full flex items-center justify-center hover:bg-white/10 transition-colors">
+                            <i class="fab fa-tiktok text-muted-foreground"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 glass-card rounded-full flex items-center justify-center hover:bg-white/10 transition-colors">
+                            <i class="fab fa-whatsapp text-muted-foreground"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-display text-lg font-semibold text-foreground mb-4">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-muted-foreground hover:text-foreground transition-colors">Shop All</a></li>
+                        <li><a href="#" class="text-muted-foreground hover:text-foreground transition-colors">New Arrivals</a></li>
+                        <li><a href="#" class="text-muted-foreground hover:text-foreground transition-colors">Best Sellers</a></li>
+                        <li><a href="#" class="text-muted-foreground hover:text-foreground transition-colors">About Us</a></li>
+                        <li><a href="#" class="text-muted-foreground hover:text-foreground transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Customer Care -->
+                <div>
+                    <h3 class="font-display text-lg font-semibold text-foreground mb-4">Customer Care</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-muted-foreground hover:text-foreground transition-colors">Shipping Info</a></li>
+                        <li><a href="#" class="text-muted-foreground hover:text-foreground transition-colors">Returns</a></li>
+                        <li><a href="#" class="text-muted-foreground hover:text-foreground transition-colors">Size Guide</a></li>
+                        <li><a href="#" class="text-muted-foreground hover:text-foreground transition-colors">FAQ</a></li>
+                        <li><a href="#" class="text-muted-foreground hover:text-foreground transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Newsletter -->
+            <div class="border-t border-border pt-8 mb-8">
+                <div class="max-w-md mx-auto text-center">
+                    <h3 class="font-display text-xl font-semibold text-foreground mb-4">Stay in the Scent</h3>
+                    <p class="text-muted-foreground mb-6">Get notified about new fragrances and exclusive offers</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-3 glass-card rounded-l-xl border border-border focus:ring-2 focus:ring-primary focus:border-transparent bg-background text-foreground placeholder-muted-foreground">
+                        <button class="gradient-primary text-primary-foreground px-6 py-3 rounded-r-xl font-semibold hover:scale-105 transition-transform">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="text-center text-muted-foreground text-sm">
+                <p>&copy; 2024 ISHA'S FRAGRANCE. All rights reserved. | Curated by Aish Adoke</p>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <!-- @COMPONENT: Floating WhatsApp Button -->
+    <div class="whatsapp-float">
+        <button class="w-16 h-16 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 group">
+            <i class="fab fa-whatsapp text-white text-2xl group-hover:scale-110 transition-transform"></i>
+        </button>
+    </div>
+    <!-- @END_COMPONENT: Floating WhatsApp Button -->
+
+    <script>
+        // TODO: Implement business logic, API calls, or state management
+        
+        (function() {
+            // Header scroll effect
+            const header = document.getElementById('header');
+            let lastScrollY = window.scrollY;
+
+            window.addEventListener('scroll', () => {
+                const currentScrollY = window.scrollY;
+                
+                if (currentScrollY > 100) {
+                    header.style.backgroundColor = 'rgba(10, 10, 15, 0.9)';
+                    header.style.backdropFilter = 'blur(20px)';
+                } else {
+                    header.style.backgroundColor = 'rgba(255, 255, 255, 0.05)';
+                    header.style.backdropFilter = 'blur(20px)';
+                }
+                
+                lastScrollY = currentScrollY;
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // WhatsApp integration
+            function waLink(message) {
+                const num = '+2348082201270';
+                const text = encodeURIComponent(message);
+                return `https://wa.me/${num}?text=${text}`;
+            }
+
+            // Floating WhatsApp button
+            document.querySelector('.whatsapp-float button').addEventListener('click', function() {
+                const message = "Hi ISHA'S FRAGRANCE! I'd love to order this perfume:";
+                window.open(waLink(message), '_blank');
+            });
+
+            // Product buy buttons
+            document.querySelectorAll('.product-card button').forEach(button => {
+                if (button.textContent.includes('Buy Now')) {
+                    button.addEventListener('click', function() {
+                        const card = this.closest('.product-card');
+                        const productName = card.querySelector('h3').textContent;
+                        const productPrice = card.querySelector('.text-2xl').textContent;
+                        const message = `Hi ISHA'S FRAGRANCE! I want to order: ${productName} at ${productPrice}.`;
+                        window.open(waLink(message), '_blank');
+                    });
+                }
+            });
+
+            // Category filter buttons
+            document.querySelectorAll('section:nth-of-type(4) button').forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active state from all buttons
+                    document.querySelectorAll('section:nth-of-type(4) button').forEach(btn => {
+                        btn.className = btn.className.replace('bg-primary/10 text-primary border-primary', 'text-muted-foreground border-border');
+                    });
+                    
+                    // Add active state to clicked button
+                    this.className = this.className.replace('text-muted-foreground border-border', 'bg-primary/10 text-primary border-primary');
+                });
+            });
+
+            // Intersection Observer for animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = 'running';
+                        entry.target.classList.add('animate-fadeIn');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe sections for animation
+            document.querySelectorAll('section').forEach(section => {
+                observer.observe(section);
+            });
+        })();
+    </script>
+</body>
+</html>
